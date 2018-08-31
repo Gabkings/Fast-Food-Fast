@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- main css -->
+     <link rel="stylesheet" href="css/general.css">
+     <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <title>Fast Food Fast</title>
+  </head>
+    <body>
+        <div class="navbar" id="myNavbar">
+            <ul>
+                  <li style="float:left;"><a href="index.html" style="font-size: 30px;" class="logo">
+                      <span class='red'>Blessed </span>Cafe
+                      </a>
+                  </li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="Bar()">
+                            <i class="fa fa-bars"></i>
+                      </a>
+                  </li>
+                  <li id="signup"><a href="register/index.html">Register</a></li>
+                  <li id="login"><a href="signin.html">Login</a></li>
+                  <li id="login"><a href="#">About Us</a></li>
+                  <li id="menu"><a href="meals/index.html">Our Menu</a></li>
+                  <li id="home"><a href="index.html" class"active">Home</a></li>
+            </ul>
+        </div>
+        
+       <!--  my slide show goes here -->
+            <div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+            <img src="images/1.jpg">1366X768
+            <p class="captionText">A Good Heath Starts With Delicous Meal</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/burger.jpg">
+            <p class="captionText">What a delicious Burger</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/chicken.jpg">
+            <p class="captionText">Fried Chicken</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/milkshake.jpg">
+            <p class="captionText">Milkshake </p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+        <!--  my slide show goes here -->
+        <script src="js/slider.js"></script>
+    <footer class=footer>
+      <h2 style="font-size: 25px;">Creativity is not so much a boundless well, but an all-you-can-eat buffet of elements for your creative endeavor.</h2>
+          <p>Blessed Cafe &copy; 2018</p>
+    </footer>
+    </body>
+</html>

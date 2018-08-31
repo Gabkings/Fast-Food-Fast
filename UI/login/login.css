@@ -1,0 +1,58 @@
+
+/*Sign in form styles*/
+body {
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body,html {
+  height: 100%;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #b2eef7;
+  border-radius: 10px;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #19adc4;
+}
+#signin-button {
+    background-color: #329495;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.login {
+    padding: 0px;
+    width:50%;
+    margin-left: 25%;
+}
+.signin {
+  text-align: center;
+  margin-top: -10px;
+  width:50%;
+  margin-left: 25%;
+}
+

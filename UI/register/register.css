@@ -1,0 +1,96 @@
+
+.form_container {
+  background: rgba(64, 68, 63,0.6);
+  margin-bottom: 10px;
+  height: 470px;
+}
+
+.register {
+  padding: 0px;
+  width:50%;
+  margin-left: 25%;
+  height: 100%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #FAFAFA;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #baf2ef;
+  outline: none;
+}
+
+/*.btns{
+  width: 100%;
+  display: in
+}*/
+
+
+/* Set a style for the submit/register button */
+#register-button {
+  color: white;
+  float: left;
+  padding: 16px 20px;
+  width: 40%;
+  margin: 8px 0;
+  margin-left: 2px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  background: rgb(14, 72, 122);
+  border-radius: 10px;
+}
+#cancel-button{
+  color: white;
+  float: right;
+  padding: 16px 20px;
+  width: 40%;
+  margin: 8px 0;
+  margin-left: 2px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  background: #c9520e;
+  border-radius: 10px;
+}
+.signup-btn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: #4b960d;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  text-align: center;
+  margin-top: -10px;
+  width:50%;
+  margin-left: 25%;
+}
+
+/*Sign in form styles*/
+
+button {
+    background-color: #329495;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}

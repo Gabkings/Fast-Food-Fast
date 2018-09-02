@@ -1,23 +1,26 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- main css -->
      <link rel="stylesheet" href="general.css">
      <link rel="stylesheet" href="menu.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Fast Food Fast</title>
+    <title>Blessed Cafe</title>
   </head>
     <body>
         <div class="navbar" id="myNavbar">
             <ul>
-                  <li style="float:left;"><a href="index.html" style="font-size: 30px;" class="logo">
+                  <li style="float:left;"><a href="../index.html" style="font-size: 30px;" class="logo">
                       <span class='red'>Blessed </span>Cafe
                       </a>
                   </li>
+          <li>
+              <a href="javascript:void(0);" class="icon" onclick="icon_bar()">
+                  <i class="fa fa-bars"></i>
+              </a>
+          </li>
           <li id="regular"><a href="#">Sign out</a></li>
           <li id="regular"><a href="../customer_order/index.html">View Your Order History</a></li>
         </ul>
@@ -33,7 +36,7 @@
         </div>
         <div class="btn_cash">
           <button type=submit id="order">Order</button>
-          <p>Ksh. 200</p>
+          <p class="price">Ksh. 200</p>
         </div>
       </div>
       <div class="item">
@@ -45,7 +48,7 @@
         </div>
         <div class="btn_cash">
           <button type=submit id="order">Order</button>
-          <p>Ksh. 200</p>
+          <p class="price">Ksh. 200</p>
         </div>
       </div>
       <div class="item">
@@ -57,7 +60,7 @@
         </div>
         <div class="btn_cash">
           <button type=submit id="order">Order</button>
-          <p>Ksh. 200</p>
+          <p class="price">Ksh. 200</p>
         </div>
       </div>
       <div class="item">
@@ -69,7 +72,7 @@
         </div>
         <div class="btn_cash">
           <button type=submit id="order">Order</button>
-          <p>Ksh. 200</p>
+          <p class="price">Ksh. 200</p>
         </div>
       </div>
       <div class="item">
@@ -81,7 +84,7 @@
         </div>
         <div class="btn_cash">
           <button type=submit id="order">Order</button>
-          <p>Ksh. 200</p>
+          <p class="price">Ksh. 200</p>
         </div>
       </div>
       <div class="item">
@@ -93,11 +96,12 @@
         </div>
        <div class="btn_cash">
           <button type=submit id="order">Order</button>
-          <p>Ksh. 200</p>
+          <p class="price">Ksh. 200</p>
         </div>
       </div>
     </div>
     </main>
+    <div class="clear-fix"></div>
     <footer class=footer>
       <p>Fast Food Fast &copy; 2018</p>
     </footer>

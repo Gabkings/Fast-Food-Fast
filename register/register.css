@@ -94,3 +94,19 @@ button {
 button:hover {
     opacity: 0.8;
 }
+.add{
+    position: absolute;
+    width: 20%;
+    top: 8%;
+    right: 6%;
+  
+}
+.add button{
+  border-radius: 10px;
+  height: 70px;
+}
+.add a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}

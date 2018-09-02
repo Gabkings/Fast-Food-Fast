@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 main{
     margin-top: 10px;
 }
@@ -12,7 +16,7 @@ main{
 }
 
 .item{
-    width: 25%;
+    width: 28%;
     display: inline-block;
     border: 1px solid black;
     height: 300px;
@@ -36,10 +40,11 @@ main{
     font-size: 20px;
 }
 .btn_cash{
- background: orange;
+ background: rgba(23,45,100,0.8);
  height: 13%;
  width: 100%
  float left
+
 }
 #order{
     float: left;
@@ -49,7 +54,7 @@ main{
     width: 40%;
     border-radius: 5%;
 }
-.btn_cash p{
+.price{
     float: right;
     background: green;
     font-size: 25px;
@@ -58,3 +63,105 @@ main{
     margin-top: -1px;
     border-radius: 5%;
 }
+.item:hover{
+    box-shadow: 2px 2px 1px black;
+
+}
+.add{
+    position: absolute;
+    width: 20%;
+    top: 8%;
+    right: 6%;
+  
+}
+.add button{
+  border-radius: 10px;
+  height: 70px;
+}
+.add a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .content{
+        background: rgba(237, 244, 242,0.6);
+        width: 80%;
+        margin: auto;
+        height: auto;
+        text-align: center;
+
+    }
+
+    .item{
+        width: 100%;
+        display: block;
+        border: 1px solid black;
+        height: 250px;
+        margin: 8px;
+        border-radius: 4px;
+    }
+            
+}
+@media only screen and (max-width: 700px) {
+    .content{
+        background: rgba(237, 244, 242,0.6);
+        width: 80%;
+        margin: auto;
+        height: auto;
+        text-align: center;
+
+    }
+
+    .item{
+        width: 25%;
+        display: inline-block;
+        border: 1px solid black;
+        height: 200px;
+        margin: 5px;
+        border-radius: 4px;
+    }
+
+
+    .description{
+        margin: 2px;
+        background: white;
+        text-align: center;
+        font-size: 15px;
+    }
+    .btn_cash{
+     background: orange;
+     height: 10%;
+     width: 100%
+     float left
+    }
+    #order{
+        float: left;
+        background:blue;
+        font-size: 15px;
+        height: 100%;
+        width: 40%;
+        border-radius: 5%;
+    }
+    .price{
+        float: right;
+        /*text-align: center;
+        background: green;
+        font-size: 10px;
+        font-weight: bolder;
+        height: 100%;
+        width: 40%;
+        margin-top: 0px;
+        border-radius: 5%;*/
+
+        background:blue;
+        font-size: 15px;
+        font-weight: bolder;
+        height: 100%;
+        width: 45%;
+        border-radius: 5%;
+    }
+            
+}
+

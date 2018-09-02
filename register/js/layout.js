@@ -1,4 +1,4 @@
-function Bar() {
+function icon_bar() {
     var element = document.getElementById("myNavbar");
     if (element.className === "navbar") {
         element.className += " responsive";

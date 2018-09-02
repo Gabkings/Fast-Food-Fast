@@ -56,3 +56,19 @@ button:hover {
   margin-left: 25%;
 }
 
+.add{
+    position: absolute;
+    width: 20%;
+    top: 8%;
+    right: 6%;
+  
+}
+.add button{
+  border-radius: 10px;
+  height: 70px;
+}
+.add a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}

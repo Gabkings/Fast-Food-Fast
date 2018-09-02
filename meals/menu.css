@@ -84,26 +84,7 @@ main{
   font-size: 30px;
 }
 
-@media only screen and (max-width: 500px) {
-    .content{
-        background: rgba(237, 244, 242,0.6);
-        width: 80%;
-        margin: auto;
-        height: auto;
-        text-align: center;
 
-    }
-
-    .item{
-        width: 100%;
-        display: block;
-        border: 1px solid black;
-        height: 250px;
-        margin: 8px;
-        border-radius: 4px;
-    }
-            
-}
 @media only screen and (max-width: 700px) {
     .content{
         background: rgba(237, 244, 242,0.6);
@@ -165,3 +146,23 @@ main{
             
 }
 
+@media only screen and (max-width: 500px) {
+    .content{
+        background: rgba(237, 244, 242,0.6);
+        width: 80%;
+        margin: auto;
+        height: auto;
+        text-align: center;
+
+    }
+
+    .item{
+        width: 100%;
+        display: block;
+        border: 1px solid black;
+        height: 250px;
+        margin: 8px;
+        border-radius: 4px;
+    }
+            
+}

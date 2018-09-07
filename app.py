@@ -23,13 +23,25 @@ def returnAllOrders():
 
 @app.route("/orders/<int:id>")
 def returnOne(id):
+    global orders
     specific_order = [order for order in orders if order["id"] == id]
+<<<<<<< HEAD
     # return jsonify({"Oder":specific_order[0]})
     return render_template("customer.html")
 @app.route("/orders",methods=['POST'])
 def addOrders():
     if request.method == 'POST':
         result = request.form 
+=======
+    orders = specific_order
+    return render_template("customer.html", orders = orders)
+@app.route("/orders",methods=['POST'])
+def addOrders():
+    #check if the request is post
+    if request.method == 'POST':
+        result = request.form 
+        #append the order to orders list
+>>>>>>> placeOders
         orders.append(result)
     return render_template('customer.html',orders)
 if __name__ == "__main__":

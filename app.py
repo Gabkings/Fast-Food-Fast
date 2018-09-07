@@ -21,7 +21,10 @@ def returnAllOrders():
     orders
     return render_template("customer.html",orders = orders)
 
-
-
+@app.route("/orders/<int:id>")
+def returnOne(id):
+    specific_order = [order for order in orders if order["id"] == id]
+    # return jsonify({"Oder":specific_order[0]})
+    return render_template("customer.html")
 if __name__ == "__main__":
     app.run(debug=True)

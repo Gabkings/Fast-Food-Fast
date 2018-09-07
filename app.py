@@ -29,8 +29,10 @@ def returnOne(id):
     return render_template("customer.html", orders = orders)
 @app.route("/orders",methods=['POST'])
 def addOrders():
+    #check if the request is post
     if request.method == 'POST':
         result = request.form 
+        #append the order to orders list
         orders.append(result)
     return render_template('customer.html',orders)
 if __name__ == "__main__":

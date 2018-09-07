@@ -35,7 +35,7 @@
             <h3>hamburgers</h3>
         </div>
         <div class="btn_cash">
-          <button type=submit id="order">Order</button>
+          <button type=submit id="order" onclick="addOrder(1,'Chicken',223,1,'pending')">Order</button>
           <p class="price">Ksh. 200</p>
         </div>
       </div>
@@ -47,7 +47,7 @@
             <h3>Pizza</h3>
         </div>
         <div class="btn_cash">
-          <button type=submit id="order">Order</button>
+          <button type=submit id="order" onclick="addOrder(2,'Pizza',223,1,'pending')">Order</button>
           <p class="price">$.200</p>
         </div>
       </div>
@@ -56,10 +56,10 @@
           <img src="images/fried-chicken-690039_640.jpg"></img>
         </div>
           <div class="description">
-            <h3>fried-chicken</h3>
+            <h3>Fried-chicken</h3>
         </div>
         <div class="btn_cash">
-          <button type=submit id="order">Order</button>
+          <button type=submit id="order" onclick="addOrder(3,'Fried-chicken',223,1,'pending')">Order</button>
           <p class="price">$.200</p>
         </div>
       </div>
@@ -71,7 +71,7 @@
             <h3>Milkshake</h3>
         </div>
         <div class="btn_cash">
-          <button type=submit id="order">Order</button>
+          <button type=submit id="order" onclick="addOrder(4,'Milkshake',223,1,'pending')">Order</button>
           <p class="price">$.200</p>
         </div>
       </div>
@@ -83,7 +83,7 @@
             <h3>Burger</h3>
         </div>
         <div class="btn_cash">
-          <button type=submit id="order">Order</button>
+          <button type=submit id="order" onclick="addOrder(5,'Burger',223,1,'pending')">Order</button>
           <p class="price">$.200</p>
         </div>
       </div>
@@ -95,9 +95,20 @@
             <h3>Chicken</h3>
         </div>
        <div class="btn_cash">
-          <button type=submit id="order">Order</button>
+          <button type=submit id="order" onclick="addOrder(6,'Chicken',223,1,'pending')">Order</button>
           <p class="price">$.200</p>
         </div>
+      </div>
+      <div id="cart">
+        <center>
+        <form action = "http://localhost:5000/orders" method = "POST" id="orderForm">
+          <h2>Orders</h2>
+          <table id="orders">
+            
+          </table>
+          <center><input type="submit" value="Buy Selected" name="" id=""></center>
+        </form>
+      </center>
       </div>
     </div>
     </main>
@@ -106,5 +117,44 @@
       <p>Fast Food Fast &copy; 2018</p>
     </footer>
     <script src="js/layout.js"></script>
+    <script> 
+      function addOrder(id,name ,price, qty,status) {
+
+        console.log(price);
+        console.log(name) ;
+        console.log(qty);
+        var item = {
+          price:price,
+          name: name,
+          qty: qty,
+          status: status,
+          id: id
+        }
+        addToCart(item);
+      }
+      function addToCart(item) {
+
+        tr = document.createElement('tr')
+        td = document.createElement('td')
+        id = document.createElement('input')
+        priceinput = document.createElement('input')
+        nameinput = document.createElement('input')
+        qtyinput = document.createElement('input')
+        statuinput = document.createElement('input')
+        id.value = item.id
+        priceinput.value = item.price;
+        nameinput.value = item.name;
+        qtyinput.value = item.qty;
+        statuinput.value = item.status;
+        td.append(id)
+        td.append(nameinput)
+        td.append(priceinput)
+        td.append(qtyinput)
+        td.append(statuinput)
+        tr.append(td)
+        table = document.getElementById('orders')
+        table.append(tr)
+      }
+    </script>
   </body>
 </html>

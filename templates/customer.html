@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- main css -->
+     <link rel="stylesheet" href="{{url_for('static',filename='general.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='customer.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fast Food Fast</title>
+  </head>
+    <body>
+        <div class="navbar" id="myNavbar">
+            <ul>
+                  <li style="float:left;"><a href="index.html" style="font-size: 30px;" class="logo">
+                      <span class='red'>Blessed </span>Cafe
+                      </a>
+                  </li>
+                  <li>
+              <a href="javascript:void(0);" class="icon" onclick="icon_bar()">
+                  <i class="fa fa-bars"></i>
+              </a>
+          </li>
+          <li id="regular"><a href="#">Sign out</a></li>
+          <li id="menu"><a href="../meals/index.html">Our Menu</a></li>
+          <li id="home"><a href="../index.html">Home</a></li>
+        </ul>
+    </div>
+    <table>
+         <tr>
+            <th>Order ID</th>
+            <th>Order Items</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Status</th>
+            {% for dict_item in orders %}
+        </tr>
+               {% for key, value in dict_item.items() %}
+                  <td>{{value}}</td>
+               {% endfor %}
+           </td>
+        </tr>
+            {% endfor %}
+
+    </table>
+    <ul>
+        <li>The customer will be able to place and order buy clicking the order button on  the menu</li>
+        <li>The customer order will be save in the orders list in an object format.</li>
+        <li>The customer will be able to view his/her order via view your order url.</li>
+    </ul>
+    <footer class=footer>
+        <p>Fast Food Fast &copy; 2018</p>
+    </footer> 
+    <script src="js/layout.js"></script>
+    </body>
+</html>

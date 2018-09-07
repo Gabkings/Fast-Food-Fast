@@ -26,5 +26,11 @@ def returnOne(id):
     specific_order = [order for order in orders if order["id"] == id]
     # return jsonify({"Oder":specific_order[0]})
     return render_template("customer.html")
+@app.route("/orders",methods=['POST'])
+def addOrders():
+    if request.method == 'POST':
+        result = request.form 
+        orders.append(result)
+    return render_template('customer.html',orders)
 if __name__ == "__main__":
     app.run(debug=True)
